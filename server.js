@@ -16,10 +16,6 @@ app.get("/", (req, res) => {
     res.send("Simple Hello")
 })
 
-app.get("/hey", (req, res) => {
-    res.send("This is /hey")
-})
-
 const productsController = require("./controllers/products_controllers")
 app.use("/products", productsController)
 
